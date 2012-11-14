@@ -1,1 +1,197 @@
-My GitHub Page!!!
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Charitti by mcongrove</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Charitti</h1>
+        <p>An open-source Titanium project that allows charities to quickly build mobile applications.</p>
+
+        <p class="view"><a href="https://github.com/mcongrove/CharitTi">View the Project on GitHub <small>mcongrove/CharitTi</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/mcongrove/CharitTi/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mcongrove/CharitTi/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mcongrove/CharitTi">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><img src="https://github.com/mcongrove/CharitTi/raw/master/Chariti.png" alt=""></p>
+
+<h3>An open-source Titanium project that allows charities to quickly build mobile applications.</h3>
+
+<h6>NOTICE: In order to ensure your application is easily updated to the latest version of the ChariTi framework, please keep all edits to the <code>/app/lib/data/</code> folder.</h6>
+
+<h1>Overview</h1>
+
+<p>The ChariTi framework is built to allow the often-times small team of staffers at charities around the world to build a mobile application. This is achieved by removing the requirement for a highly-knowledgeable technical staff or costly app development firm and instead allowing app creation and management by anyone from a marketing director to an intern.</p>
+
+<h1>Technical Information</h1>
+
+<p><strong>Currently supports:</strong></p>
+
+<ul>
+<li>iPhone</li>
+<li>iPad (zoomed)</li>
+</ul><p><strong>Coming soon:</strong></p>
+
+<ul>
+<li>Android</li>
+<li>iPad (split-screen)</li>
+</ul><p><strong>Requirements:</strong></p>
+
+<h6><em>We are actively working to remove the necessity for you to download or install any software. This should be available in the 1.1 or 1.2 release of ChariTi.</em></h6>
+
+<ul>
+<li><a href="http://www.appcelerator.com/platform/titanium-studio">Appcelerator Titanium Studio</a></li>
+<li>
+<a href="http://www.appcelerator.com/platform/titanium-sdk">Appcelerator Titanium Mobile SDK</a> v2.1+</li>
+<li><a href="https://github.com/appcelerator/alloy">Titanium Alloy</a></li>
+</ul><h1>Getting Started</h1>
+
+<ul>
+<li>Replace the <code>/app/lib/data/logo@2x.png</code> file with your logo (must be 52px tall)</li>
+<li>Replace the <code>/app/lib/data/logo.png</code> file with your logo (must be 26px tall and the same aspect ratio as <code>logo@2x.png</code>)</li>
+<li>Open <code>/app/lib/data/app.json</code> (this file is what your application is built on)</li>
+<li>Edit the <code>app.json</code> file using the <em>Configuration Options</em> below to create your application</li>
+</ul><h1>Configuration Options</h1>
+
+<p>Each <code>tabs</code> item requires a <code>title</code>, an <code>image</code> and a component <code>type</code>. Some components type also have their own required values (noted below).</p>
+
+<p>The <code>image</code> can be any one of the pre-bundled images located in <code>/app/assets/icons/</code>, or a custom location.</p>
+
+<h3>Component Types</h3>
+
+<ul>
+<li>Blog
+
+<ul>
+<li>feed - RSS feed URL</li>
+</ul>
+</li>
+<li>Donate
+
+<ul>
+<li>file - A local HTML file stored in <code>/app/lib/data/</code>, e.g. <code>/data/donate.html</code>
+</li>
+</ul>
+</li>
+<li>Facebook
+
+<ul>
+<li>feed - RSS feed URL, e.g. <code>http://www.facebook.com/feeds/page.php?id=FACEBOOK_PAGE_ID&amp;format=rss20</code>
+</li>
+</ul>
+</li>
+<li>Flickr
+
+<ul>
+<li>username - Flickr username</li>
+<li>apiKey - <a href="http://www.flickr.com/services/api/keys/apply/">Flickr API key</a>
+</li>
+</ul>
+</li>
+<li>Map
+
+<ul>
+<li>points - An array of map locations (see example below)</li>
+</ul>
+</li>
+<li>News
+
+<ul>
+<li>feed - RSS feed URL</li>
+</ul>
+</li>
+<li>PDF
+
+<ul>
+<li>url - URL to a PDF</li>
+</ul>
+</li>
+<li>Text
+
+<ul>
+<li>heading - The heading to display</li>
+<li>text - The text to display</li>
+</ul>
+</li>
+<li>Web
+
+<ul>
+<li>url - Website URL <em>or</em>
+</li>
+<li>html - HTML code</li>
+</ul>
+</li>
+<li>YouTube
+
+<ul>
+<li>username - YouTube username</li>
+</ul>
+</li>
+</ul><h3>Map Points Example</h3>
+
+<pre><code>"points": [
+    {
+        "latitude": "28.24560022171899",
+        "longitude": "-80.72571516036987",
+        "pinColor": "Ti.Map.ANNOTATION_RED",
+        "title": "Place A",
+        "subTitle": "This is a subtitle"
+    },
+    {
+        "latitude": "28.24704626421908",
+        "longitude": "-80.73882579803467",
+        "pinColor": "Ti.Map.ANNOTATION_RED",
+        "title": "Place B",
+        "subTitle": ""
+    }
+]
+</code></pre>
+
+<h1>Help</h1>
+
+<p>At this time, we highly suggest that anyone using ChariTi be knowledgeable in Titanium, or employ the assistance of a certified Appcelerator partner.</p>
+
+<p>We're actively working on removing the requirement for downloading or installing any software, allowing charities to easily create and update applications without <em>any</em> assistance. This is targeted for the 1.1 or 1.2 release of ChariTi.</p>
+
+<p>Any bugs should be reported using the <a href="https://github.com/mcongrove/CharitTi/issues">ChariTi GitHub Issues</a> page.</p>
+
+<h1>Helping</h1>
+
+<p>If you'd like to help develop or maintain ChariTi, please fork the code and submit a pull request when you're done.</p>
+
+<p>We highly appreciate any generic, high-level components that we can add to our existing set. Please be sure to maintain the code standards we've set using existing components as an example.</p>
+
+<p>Bug testing and fixing is <strong>HIGH</strong> priority, and assistance will be rewarded with a huge "Thank you!".</p>
+
+<p>If you have bigger plans in mind (or want to help us with the ones we're thinking of), please send an e-mail to <a href="mailto:mcongrove@appcelerator.com">mcongrove@appcelerator.com</a>.</p>
+
+<h1>Acknowledgements</h1>
+
+<h3>ChariTi thanks the following for their help and inspiration throughout this project:</h3>
+
+<p>Rick Blalock, Tony Lukasavage, Dennis Ashby, Elyse Phillips, Gregory DiPaolo, Mark Aronica, Sandeep Johri, Jeff Haynie, Maria Lu and the rest of the team at Appcelerator, Ray Miranda, Ivan Mathy, Oleg Polyakov, Mads Moller, and the entire crowd of developers at Appcelerator's 2012 Hack-to-Help.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/mcongrove">mcongrove</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
