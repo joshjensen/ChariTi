@@ -33,7 +33,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#327b9f;
   font-weight:400;
   text-decoration:none;
 }
@@ -157,6 +157,7 @@ header ul a strong {
   font-size:14px;
   display:block;
   color:#222;
+  margin:2px 0 0;
 }
 
 section {
@@ -182,6 +183,63 @@ footer {
   position:fixed;
   bottom:50px;
 }
+
+table.icons img {
+	width: 32px;
+	height: 32px;
+	margin: 0 10px;
+}
+
+table.icons td {
+  text-align: center;
+  background: #333;
+  color: #aaa;
+  font-size: 12px;
+  line-height: 12px;
+  width: 42px;
+}
+
+table.config {
+	margin: 5px 0 0;
+}
+
+table.config a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+table.config code {
+	color: #ddd;
+}
+
+table.config td {
+	border-top: 1px solid #FFF;
+	vertical-align: top;
+	padding: 10px;
+	background: #333;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+table.config td.key {
+	font-weight: bold;
+	color: #fff;
+	text-align: left;
+	font-size: 13px;
+	width: 60px;
+}
+
+table.config td.value {
+	color: #aaa;
+	text-align: left;
+}
+
+
+/*
+			<table class="config"><tbody><tr>
+			<td class="key">feed</td>
+			<td class="value">RSS feed URL</td>
+*/
 
 @media print, screen and (max-width: 960px) {
   

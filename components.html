@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>ChariTi by Matthew Congrove</title>
+	<link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
+	<link rel="stylesheet" href="stylesheets/pygment_trac.css" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!--[if lt IE 9]>
+		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<a href="http://mcongrove.github.com/CharitTi/"><img src="https://github.com/mcongrove/charitti/raw/master/Chariti.png" style="float: left; margin: 0 15px 0 0;" width="100"></a>
+			
+			<h1 style="margin: 0 0 5px;"><a href="http://mcongrove.github.com/CharitTi/">ChariTi</a></h1>
+
+			<p>Open Source Mobile Framework for Charities</p>
+			
+			<br style="clear: all;" />
+			
+			<ul>
+				<li style="float: none; width: 100%;"><a href="http://mcongrove.github.com/CharitTi/components.html" style="text-align: left; margin: 0 0 0 15px;">View Available <strong>Components</strong></a></li>
+			</ul>
+
+			<ul>
+				<li><a href="https://github.com/mcongrove/charitti/zipball/master">Download <strong>ZIP File</strong></a></li>
+				<li><a href="https://github.com/mcongrove/charitti/tarball/master">Download <strong>TAR Ball</strong></a></li>
+				<li><a href="https://github.com/mcongrove/charitti">View On <strong>GitHub</strong></a></li>
+			</ul>
+			
+			<p style="font-size: 12px;">This project is maintained by <a href="https://github.com/mcongrove">Matthew Congrove</a></p>
+		</header>
+
+		<section>
+			<h1>Components & Configuration</h1>
+
+			<p>Each <code>tabs</code> item requires a <code>title</code>, an <code>image</code> and a component <code>type</code>. Some components type also have their own required values (noted below).</p>
+			
+			<h3 style="margin: 10px 0 0;">Blog</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">feed</td>
+			<td class="value">RSS feed URL</td>
+			</tr></tbody></table>
+			
+			<h3 style="margin: 10px 0 0;">Donate</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">file</td>
+			<td class="value">A local HTML file stored in <code>/app/lib/data/</code>, e.g. <code>/data/donate.html</code></td>
+			</tr></tbody></table>
+			
+			<h3 style="margin: 10px 0 0;">Facebook</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">feed</td>
+			<td class="value">RSS feed URL, e.g. <code>http://www.facebook.com/feeds/page.php?id=FACEBOOK_PAGE_ID&amp;format=rss20</code></td>
+			</tr></tbody></table>
+			
+			<h3 style="margin: 10px 0 0;">Flickr</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">username</td>
+			<td class="value">Flickr username</td>
+			</tr><tr>
+			<td class="key">apiKey</td>
+			<td class="value"><a href="http://www.flickr.com/services/api/keys/apply/">Flickr API key</a></td>
+			</tr></tbody></table>
+			
+			<h3 style="margin: 10px 0 0;">Map</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">points</td>
+			<td class="value">An array of map locations (see example below)</td>
+			</tr></tbody></table>
+			
+			<h3 style="margin: 10px 0 0;">News</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">feed</td>
+			<td class="value">RSS feed URL</td>
+			</tr></tbody></table>
+			
+			<h3 style="margin: 10px 0 0;">PDF</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">url</td>
+			<td class="value">URL to a PDF</td>
+			</tr></tbody></table>
+			
+			<h3 style="margin: 10px 0 0;">Text</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">heading</td>
+			<td class="value">The heading to display</td>
+			</tr><tr>
+			<td class="key">text</td>
+			<td class="value">The text to display</td>
+			</tr></tbody></table>
+			
+			<h3 style="margin: 10px 0 0;">Web</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">url</td>
+			<td class="value">Website URL</td>
+			</tr><tr>
+			<td class="key">html</td>
+			<td class="value">HTML code</td>
+			</tr></tbody></table>
+			
+			<h3 style="margin: 10px 0 0;">YouTube</h3>
+			<table class="config"><tbody><tr>
+			<td class="key">username</td>
+			<td class="value">YouTube username</td>
+			</tr></tbody></table>
+
+			<h2 style="margin: 25px 0 15px;">Map Points Example</h2>
+			<pre><code>"points": [
+	{
+		"latitude": "28.24560022171899",
+		"longitude": "-80.72571516036987",
+		"pinColor": "Ti.Map.ANNOTATION_RED",
+		"title": "Place A",
+		"subTitle": "This is a subtitle"
+	},
+	{
+		"latitude": "28.24704626421908",
+		"longitude": "-80.73882579803467",
+		"pinColor": "Ti.Map.ANNOTATION_RED",
+		"title": "Place B",
+		"subTitle": ""
+	}
+]
+</code></pre>
+		</section>
+	</div>
+	
+	<script src="javascripts/scale.fix.js" type="text/javascript">
+</script>
+</body>
+</html>
