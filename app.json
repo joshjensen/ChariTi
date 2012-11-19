@@ -1,0 +1,104 @@
+{
+	"id": "MercyCorps.001",
+	"configurationUrl": "http://mcongrove.github.com/ChariTi/app.json",
+	"settings": {
+		"emailSettings": {
+			"subject": "Check out this great Mercy Corps content!",
+			"body": "I found this and thought you might find it interesting:<br /><br />",
+			"footer": "Sent via <a href='http://www.mercycorps.org/'>Mercy Corps</a>"
+		},
+		"colors": {
+			"primary": "#800528",
+			"secondary": "#B30738",
+			"text":	"#FFF"
+		}
+	},
+	"tabs": [
+		{
+			"title": "News",
+			"feed": "http://www.mercycorps.org/services/rss/homepage.xml",
+			"type": "news",
+			"image": "news1.png"		
+		},
+		{
+			"title": "Blog",
+			"feed": "http://www.mercycorps.org/blog/feed",
+			"type": "blog",
+			"image": "news2.png"		
+		},
+		{
+			"title": "Facebook",
+			"userid": "7263476274",
+			"type": "facebook",
+			"image": "facebook.png"
+		},
+		{
+			"title": "Photos",
+			"username": "mercycorps",
+			"apiKey": "e067644d8af6a8a9f2f36f8abbe32720",
+			"type": "flickr",
+			"image": "photo.png"		
+		},
+		{
+			"title": "Tweets",
+			"username": "mercycorps",
+			"type": "twitter",
+			"image": "twitter2.png"
+		}
+	],
+	"inactiveTabs": [
+		{
+			"title": "Finance",
+			"url": "http://www.mercycorps.org/impact",
+			"type": "web",
+			"image": "financial3.png"
+		},
+		{
+			"title": "Video",
+			"username": "mercycorps",
+			"type": "youtube",
+			"image": "video2.png"
+		},
+		{
+			"title": "Map",
+			"points": [
+				{
+					"latitude": "28.24560022171899",
+					"longitude": "-80.72571516036987",
+					"pinColor": "Ti.Map.ANNOTATION_RED",
+					"title": "Place A",
+					"subTitle": "This is a subtitle"
+				},
+				{
+					"latitude": "28.24704626421908",
+					"longitude": "-80.73882579803467",
+					"pinColor": "Ti.Map.ANNOTATION_RED",
+					"title": "Place B",
+					"subTitle": ""
+				},
+				{
+					"latitude": "28.228406881099808",
+					"longitude": "-80.73399782180786",
+					"pinColor": "Ti.Map.ANNOTATION_RED",
+					"title": "Place C",
+					"subTitle": "This is a subtitle"
+				}
+			],
+			"type": "map",
+			"image": "map1.png"
+		},
+		{
+			"title": "Haiti",
+			"url": "http://www.givewell.org/files/DisasterRelief/Mercycorps/haiti_1yr_progressreport_v12.pdf",
+			"type": "pdf",
+			"image": "news1.png"
+		},
+		{
+			"title": "About",
+			"heading": "Saving lives in the world’s toughest places",
+			"text": "Mercy Corps helps people turn the crises they confront into the opportunities they deserve.\n\nDriven by local needs, our programs provide communities in the world’s toughest places with the tools and support they need to transform their own lives. Our worldwide team in 41 countries is improving the lives of 19 million people.",
+			"type": "text",
+			"image": "news2.png"
+		}
+	]
+}
