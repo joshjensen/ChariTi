@@ -13,7 +13,7 @@
 			"text":	"#FFF"
 		}
 	},
-	"tabs": [
+	"nontabs": [
 		{
 			"title": "News",
 			"feed": "http://www.mercycorps.org/services/rss/homepage.xml",
@@ -46,7 +46,7 @@
 			"image": "twitter2.png"
 		}
 	],
-	"inactiveTabs": [
+	"tabs": [
 		{
 			"title": "Finance",
 			"url": "http://www.mercycorps.org/impact",
