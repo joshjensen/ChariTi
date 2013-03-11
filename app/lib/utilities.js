@@ -432,3 +432,51 @@ exports.formatNumber = function(_number) {
 
 	return x1 + x2;
 };
+
+exports.getAMPMTime = function(dateObj, format) {
+	var hh = dateObj.getHours();
+	var m = dateObj.getMinutes();
+	var s = dateObj.getSeconds();
+	var dd = "AM";
+	var h = hh;
+	if(h >= 12) {
+		h = hh - 12;
+		dd = "PM";
+	}
+	if(h === 0) {
+		h = 12;
+	}
+	m = m < 10 ? "0" + m : m;
+
+	s = s < 10 ? "0" + s : s;
+
+	/* if you want 2 digit hours: */
+	h = h < 10 ? "0" + h : h;
+
+	format = (format) ? format : h + ":" + m + dd;
+
+	format = format.replace('hh', h);
+	format = format.replace('mm', m);
+	format = format.replace('ampm', dd);
+
+	return format;
+	// return h + ":" + m + dd;
+};
+
+exports.getMonth = function(month) {
+	var months = {
+		0: 'January',
+		1: 'February',
+		2: 'March',
+		3: 'April',
+		4: 'May',
+		5: 'June',
+		6: 'July',
+		7: 'August',
+		8: 'September',
+		9: 'October',
+		10: 'November',
+		11: 'December'
+	};
+	return months[month];
+};
