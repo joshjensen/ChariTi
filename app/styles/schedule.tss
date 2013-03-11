@@ -1,0 +1,6 @@
+"#container": {
+	backgroundColor: "#EEE",
+	rowHeight: "48dp",
+	top: "47dp",
+	separatorStyle: Titanium.UI.iPhone.TableViewSeparatorStyle.NONE
+}

@@ -1,0 +1,67 @@
+"#Wrapper": {
+	height: Ti.UI.SIZE,
+	selectedBackgroundColor: "#DDD",
+	selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE,
+	minRowHeight: "60dp"
+},
+"#contentWrapper": {
+	height: Ti.UI.SIZE,
+	top: 0,
+	left: "60dp",
+	backgroundGradient: {
+		type: "linear",
+		colors: [
+			"#F8F8F8",
+			"#ECECEC"
+		],
+		startPoint: {
+			x: 0,
+			y: 0
+		},
+		endPoint: {
+			x: 0,
+			y: "100%"
+		},
+		backFillStart: true
+	}	
+},
+"#content": {
+	height: Ti.UI.SIZE,
+	layout: "vertical",
+	top: 0,
+	bottom: '10dp',
+	left: 0
+},
+"#subHeading": {
+	left: "10dp",
+	right: "45dp",
+	top: "13dp",
+	height: "14dp",
+	font: {
+		fontSize: "12dp",
+		fontWeight: "normal"
+	},
+	color: "#777"
+},
+"#heading": {
+	left: "10dp",
+	right: "45dp",
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: "16dp",
+		fontWeight: "bold"
+	},
+	color: "#333"
+},
+"#arrow": {
+	width: "27dp",
+	height: "27dp",
+	right: "10dp"
+}
+"#borderBottom": {
+	width: Ti.UI.FIT,
+	height: "1",
+	bottom: 0,
+	backgroundColor: "#DDD",
+	left: "60dp"
+}

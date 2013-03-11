@@ -1,0 +1,7 @@
+<Alloy>
+	<View id="content">
+		<View id="borderTop"></View>
+		<Label id="heading" text="Test" />
+		<View id="borderBottom"></View>
+	</View>
+</Alloy>

@@ -1,0 +1,46 @@
+"#content": {
+	height: "36dp",
+	left: "10dp",
+	backgroundGradient: {
+		type: "linear",
+		colors: [
+			"#ededed",
+			"#dddddd"
+		],
+		startPoint: {
+			x: 0,
+			y: 0
+		},
+		endPoint: {
+			x: 0,
+			y: "100%"
+		},
+		backFillStart: true
+	}
+},
+"#heading": {
+	top: "10dp",
+	right: "45dp",
+	bottom: "10dp",
+	left: "10dp",
+	height: Ti.UI.SIZE,
+	font: {
+		fontSize: "16dp",
+		fontWeight: "bold"
+	},
+	color: "#333"
+},
+"#borderTop": {
+	width: Ti.UI.FIT,
+	height: "1",
+	top: 0,
+	left: 0,
+	backgroundColor: "#c1c1c1"
+},
+"#borderBottom": {
+	width: Ti.UI.FIT,
+	height: "1",
+	bottom: 0,
+	left: 0,
+	backgroundColor: "#c1c1c1"
+}
