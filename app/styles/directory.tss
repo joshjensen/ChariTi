@@ -1,0 +1,14 @@
+"#container": {
+	backgroundColor: "#EEE",
+	rowHeight: "48dp",
+	separatorColor: "#DDD",
+	top: "47dp",
+	filterCaseInsensitive: true,
+	filterAttribute: "searchAttr"
+},
+"SearchBar": {
+	height: "43dp", 
+	top: 0, 
+	barColor: "#ddd", 
+	showCancel: false
+}
