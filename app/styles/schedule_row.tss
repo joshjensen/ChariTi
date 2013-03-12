@@ -4,6 +4,12 @@
 	selectionStyle: Titanium.UI.iPhone.TableViewCellSelectionStyle.NONE,
 	minRowHeight: "60dp"
 },
+"#timeWrapper": {
+	top: 0,
+	left: 0,
+	width: "60dp",
+	height: "60dp"
+},
 "#contentWrapper": {
 	height: Ti.UI.SIZE,
 	top: 0,

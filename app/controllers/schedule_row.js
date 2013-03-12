@@ -28,7 +28,7 @@ if(CONFIG.showTime) {
 		top: "10dp",
 		left: "10dp"
 	});
-	$.Wrapper.add(circle);
+	$.timeWrapper.add(circle);
 
 	var time = Ti.UI.createLabel({
 		top: "10dp",
@@ -43,7 +43,7 @@ if(CONFIG.showTime) {
 		textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
 		verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
 	});
-	$.Wrapper.add(time);
+	$.timeWrapper.add(time);
 
 }
 

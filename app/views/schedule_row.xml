@@ -1,5 +1,6 @@
 <Alloy>
 	<TableViewRow id="Wrapper">
+		<View id="timeWrapper"></View>
 		<View id="contentWrapper">
 			<View id="content">
 				<Label id="subHeading" />

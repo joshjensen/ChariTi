@@ -106,6 +106,10 @@ $.container.addEventListener("touchstart", function(_event) {
 	APP.log("debug", "article @touchstart " + _event.row.id);
 
 	_event.row.touchStart();
+});
+
+$.container.addEventListener("touchend", function(_event) {
+	_event.row.touchEnd();
 
 	if(APP.Device.isTablet) {
 		if(_event.row.id == SELECTED) {
@@ -121,7 +125,7 @@ $.container.addEventListener("touchstart", function(_event) {
 	});
 });
 
-$.container.addEventListener("touchend", function(_event) {
+$.container.addEventListener("touchcancel", function(_event) {
 	_event.row.touchEnd();
 });
 
