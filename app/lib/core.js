@@ -536,6 +536,7 @@ var APP = {
 						case "article":
 						case "vimeo":
 						case "youtube":
+						case "schedule":
 							type = "tablet";
 							APP.hasDetail = true;
 							break;
