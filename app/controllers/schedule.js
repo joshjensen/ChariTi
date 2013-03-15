@@ -49,7 +49,7 @@ $.handleData = function(_data) {
 	var sections = [];
 	var section = null;
 	var prevDate = null;
-	var prevHour = null;
+	var prevTime = null;
 	var showTime = false;
 	var currentSession = false;
 
@@ -62,13 +62,13 @@ $.handleData = function(_data) {
 				}).getView()
 			});
 			prevDate = date;
-			prevHour = null;
+			prevTime = null;
 		}
 
-		var hour = _data[i].startTimeObj.getHours();
-		if(prevHour !== hour) {
+		var time = _data[i].startTimeObj.getTime();
+		if(time !== prevTime) {
 			showTime = true;
-			prevHour = hour;
+			prevTime = time;
 		}
 
 		var row = Alloy.createController("schedule_row", {

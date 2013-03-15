@@ -9,7 +9,8 @@ $.subHeading.color = APP.Settings.colors.primary || "#000";
 $.subHeading.text = CONFIG.subHeading || "";
 
 if($.subHeading.text === "") {
-	$.subHeading.height = '7dp';
+	$.content.remove($.subHeading);
+	$.heading.top = "10dp";
 }
 
 if(CONFIG.hideBorder) {
@@ -44,7 +45,6 @@ if(CONFIG.showTime) {
 		verticalAlign: Ti.UI.TEXT_VERTICAL_ALIGNMENT_CENTER
 	});
 	$.timeWrapper.add(time);
-
 }
 
 if(CONFIG.last) {
@@ -105,6 +105,7 @@ var onLayoutComplete = function() {
 
 	if(height < 60) {
 		$.contentWrapper.setHeight(60);
+		$.heading.setHeight(40);
 	}
 
 	var borderLeft = Ti.UI.createView({
